@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the ATM</h1>
+        <label for="ccNumber">Enter your Credit Card Number:</label>
+        <input type="text" id="ccNumber">
+        <br>
+        <label for="cvv">Enter your CVV:</label>
+        <input type="text" id="cvv">
+        <br>
+        <button onclick="checkBalance()">Check Balance</button>
+        <button onclick="serviceCallWrapper(withdraw)">Withdraw</button>
+        <button onclick="serviceCallWrapper(deposit)">Deposit</button>
+        <br>
+        <div id="balance"></div>
+        <div id="error" class="error"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
